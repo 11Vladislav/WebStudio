@@ -1,0 +1,117 @@
+.portfolio {
+  padding: 94px 0;
+}
+
+.portfolio-buttons__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-buttons__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button {
+  display: block;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 6px 22px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: inherit;
+  text-align: center;
+  line-height: 1.62;
+  background-color: $second-background-color;
+
+  &:hover,
+  &:focus {
+    color: $secondary-color;
+    background-color: $accent-hover-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition: background-color $duration $timing-function;
+  }
+}
+
+.projects__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project__item {
+  margin-bottom: 30px;
+  margin-right: 30px;
+  width: calc(100%-60px / 3);
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: box-shadow $duration $timing-function;
+  }
+
+  &:hover .project__overlay,
+  &:focus .project__overlay {
+    cursor: pointer;
+    opacity: 1;
+    transform: translateY(-294px);
+    transition: transform $duration $timing-function;
+  }
+}
+
+.project__image {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+}
+
+.project__overlay {
+  display: block;
+  position: absolute;
+  transform: translateY(294px);
+  transition: $duration $timing-function;
+  bottom: -294px;
+  height: 294px;
+  width: 100%;
+  background-color: $portfolio-overlay-color;
+  opacity: 0;
+}
+
+.project__overlay__text {
+  margin: 0;
+  padding: 63px 24px;
+  color: $secondary-color;
+  font-size: 18px;
+  line-height: 1.56;
+  text-align: left;
+}
+
+.portfolio__heading {
+  padding: 20px 24px;
+  border-left: 1px solid $item-border-color;
+  border-bottom: 1px solid $item-border-color;
+  border-right: 1px solid $item-border-color;
+  cursor: pointer;
+}
+
+.portfolio__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio__description {
+  font-size: 16px;
+  line-height: 1.87;
+  color: $alt-text-color;
+}
