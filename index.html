@@ -14,9 +14,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png"/>
 </head>
 <body>
-    <!-- <header class="page-header">
-     Навигация на другие страницы 
-    <div class="container flex">
+    <header class="page-header">
+     <!-- Навигация на другие страницы  -->
+    <div class="container nav">
     <nav class="nav">
         <a class="logo" href="./index.html" lang="en">
             <span class="logo__accent">Web</span>Studio
@@ -36,8 +36,8 @@
             </li>
         </ul>
     </nav>
- Связь с нами 
-        <ul class="connect">
+ <!-- Связь с нами  -->
+        <ul class="connect__list">
             <li class="connect__item ">
                 <a class="connect__link" href="maito:info@devstudio.com" lang="en">
                     <svg class="connect__icons">
@@ -55,8 +55,55 @@
                 </a>
             </li>
         </ul>
+        <button type="button" class="menu__open">
+            <svg class="menu__open__btn">
+                <use href="./images/icons.svg#icon-mob-menu-btn" width="24" height="16"></use>
+            </svg>
+        </button>
     </div>
-    </header> -->
+    <div class="mobile-menu">
+        <div class="container">
+        <button type="button" class="menu__close">
+            <svg class="menu__close__btn">
+                <use href="./images/icons.svg#icon-close_mob_menu" width="19" height="19"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Студия</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Портфолио</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Контакты</a>
+            </li>
+        </ul>
+        <ul class="mobile-contacts__list">
+            <li class="mobile-contacts__item">
+                <a href="#" class="mobile-contacts__link mobile-contacts__link--big">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-contacts__item">
+                <a href="#" class="mobile-contacts__link">info@devstudio.com</a>
+            </li>
+        </ul>
+        <ul class="mobile-social__list">
+            <li class="mobile-social__item">
+                <a href="#" class="mobile-social__link">Instagram</a>
+            </li>
+            <li class="mobile-social__item">
+                <a href="#" class="mobile-social__link">Twitter</a>
+            </li>
+            <li class="mobile-social__item">
+                <a href="#" class="mobile-social__link">Facebook</a>
+            </li>
+            <li class="mobile-social__item">
+                <a href="#" class="mobile-social__link">inkedin</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+    </header>
 <!-- Основной баннер -->
   <main>
     <section class="hero overlay">
