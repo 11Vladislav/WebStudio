@@ -5,7 +5,19 @@
 }
 
 .footer-container {
+  display: block;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.media-container {
   display: flex;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    justify-content: space-evenly;
+  }
 }
 
 .footer__logo {
@@ -14,6 +26,10 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer__accent {
@@ -28,6 +44,9 @@
 
 .footer__location {
   margin-top: 20px;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
 }
 
 .footer__item {
@@ -44,26 +63,42 @@
     color: $accent-hover-color;
     transition: color $duration $timing-function;
   }
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer-networks {
   margin-left: 70px;
   padding-top: 12px;
+  @media screen and (max-width: 768px) {
+    margin-top: 60px;
+    margin-left: 0;
+  }
 }
 
 .footer-networks__title {
-  display: flex;
-  text-align: center;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: $secondary-color;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    text-align: center;
+  }
 }
 
 .footer-networks__list {
   display: flex;
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .footer-networks__item {
@@ -102,6 +137,12 @@
 .footer-form {
   margin-left: 93px;
   padding-top: 12px;
+  @media screen and (max-width: 1200px) {
+    margin-top: 60px;
+    width: 100%;
+    padding-top: 0;
+    margin-left: 0;
+  }
 }
 
 .footer-form__title {
@@ -110,11 +151,25 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: $secondary-color;
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+  }
 }
 
 .footer-form__sign-up {
-  display: flex;
+  display: block;
   margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.footer-form__label {
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer-form__input {
@@ -136,6 +191,14 @@
     line-height: 1.25;
     color: $third-text-color;
   }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin-right: 0;
+  }
+  @media screen and (max-width: 1200px) {
+    width: 450px;
+    margin-right: 0;
+  }
 }
 
 .footer__button {
@@ -154,10 +217,14 @@
   border: none;
   box-shadow: 0px 4px 4px $shadow;
   border-radius: 4px;
+  @media screen and (max-width: 1200px) {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .footer-icon__send {
-  margin-left: auto;
   width: 24px;
   height: 24px;
   margin-left: 10px;
