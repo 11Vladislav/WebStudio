@@ -264,8 +264,8 @@ address {
   padding-bottom: 16px;
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   color: var(--dominant-color);
 }
 
@@ -273,6 +273,8 @@ address {
   .logo {
     padding-top: 24px;
     padding-bottom: 25px;
+    font-size: 26px;
+    line-height: 1.19;
   }
 }
 
@@ -297,13 +299,30 @@ address {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .nav__list {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+}
+
 .nav__item {
   display: block;
   margin-left: 50px;
 }
 
 .nav__item:first-child {
-  margin-left: 93px;
+  margin-left: 88px;
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__item:first-child {
+    margin-left: 93px;
+  }
 }
 
 .nav__link {
@@ -330,7 +349,7 @@ address {
   content: '';
   display: block;
   position: absolute;
-  bottom: -2px;
+  bottom: 9px;
   left: 0;
   height: 4px;
   width: 100%;
@@ -338,8 +357,29 @@ address {
   background-color: #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .nav__link.current::after {
+    bottom: -2px;
+  }
+}
+
 .connect__list {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .connect__list {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .connect__list {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .connect__icons {
@@ -354,8 +394,16 @@ address {
   display: block;
 }
 
-.connect__item:first-child {
-  margin-right: 30px;
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .connect__item:first-child {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .connect__item:first-child {
+    margin-right: 30px;
+  }
 }
 
 .connect__link {
@@ -365,8 +413,14 @@ address {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding: 32px 0;
   color: #757575;
+  color: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .connect__link {
+    padding: 32px 0;
+  }
 }
 
 .connect__link:hover, .connect__link:focus {
@@ -383,24 +437,53 @@ address {
   padding-bottom: 48px;
   width: 100vw;
   height: 100vh;
+  transform: scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu .container {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.mobile-menu.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: scale(0.5);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu__open, .menu__close {
   display: block;
   margin-left: auto;
-  background-color: #ffffff;
+  background-color: transparent;
   border: 0;
   width: 40px;
   height: 40px;
+  cursor: pointer;
+}
+
+.menu__open:hover, .menu__close:hover, .menu__open:focus, .menu__close:focus {
+  fill: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__open, .menu__close {
+    display: none;
+  }
 }
 
 .menu__open__btn {
   width: 24px;
   height: 16px;
+}
+
+.menu__open__btn:hover, .menu__open__btn:focus {
+  fill: #2196f3;
 }
 
 .menu__close__btn {
@@ -411,8 +494,9 @@ address {
   right: 15px;
 }
 
-.mobile-menu__list {
-  margin-bottom: 302px;
+.menu__close__btn:hover, .menu__close__btn:focus {
+  fill: #2196f3;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu__item {
@@ -429,6 +513,11 @@ address {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #212121;
+}
+
+.mobile-menu__link:hover, .mobile-menu__link:focus {
+  color: #2196f3;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-contacts__list {
@@ -455,8 +544,26 @@ address {
   font-size: 34px;
 }
 
+.mobile-social__list {
+  display: flex;
+}
+
+.mobile-social__item:not(:last-child) {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-social__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
 .hero {
-  margin-top: 64px;
+  margin-top: 61px;
   padding: 118px 0;
   text-align: center;
   background-color: #2f303a;
