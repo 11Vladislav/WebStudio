@@ -238,9 +238,19 @@
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: $alt-text-color;
+  &:hover,
+  &:focus {
+    color: $accent-hover-color;
+    transition: color $duration $timing-function;
+  }
 }
 .mobile-contacts__link--big {
   font-size: 34px;
+  &:hover,
+  &:focus {
+    color: $accent-hover-color;
+    transition: color $duration $timing-function;
+  }
 }
 
 .mobile-social__list {

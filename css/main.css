@@ -542,8 +542,18 @@ address {
   color: #757575;
 }
 
+.mobile-contacts__link:hover, .mobile-contacts__link:focus {
+  color: #2196f3;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .mobile-contacts__link--big {
   font-size: 34px;
+}
+
+.mobile-contacts__link--big:hover, .mobile-contacts__link--big:focus {
+  color: #2196f3;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-social__list {
@@ -1273,6 +1283,12 @@ address {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 768px) {
+  .modal {
+    min-width: 450px;
+  }
+}
+
 .button-modal__close {
   display: flex;
   position: absolute;
@@ -1321,6 +1337,12 @@ address {
   line-height: 1.15;
   text-align: center;
   color: #212121;
+}
+
+@media screen and (max-width: 768px) {
+  .modal__title {
+    line-height: 1.5;
+  }
 }
 
 .modal__form {
@@ -1395,6 +1417,7 @@ address {
   fill: #ffffff;
   border: 2px solid #212121;
   border-radius: 2px;
+  resize: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1414,6 +1437,13 @@ address {
 .agreement a {
   color: #2196f3;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .agreement {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 
 .modal-checkbox:checked + .check-icon {
@@ -1470,6 +1500,7 @@ address {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin-bottom: 30px;
   }
 }
 
