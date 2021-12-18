@@ -42,6 +42,7 @@
   text-align: center;
   background-color: $secondary-color;
   margin-bottom: 30px;
+  max-width: 450px;
   @media screen and (min-width: 320px) and (max-width: 768px) {
     margin-right: auto;
     margin-left: auto;
