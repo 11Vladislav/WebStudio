@@ -142,6 +142,7 @@
   height: 100vh;
   transform: scale(1);
   transition: transform $duration $timing-function;
+  z-index: 5;
   .container {
     position: relative;
     display: flex;
@@ -186,14 +187,15 @@
 
 .menu__close {
   @extend .menu__open;
+  position: absolute;
+  top: -38px;
+  right: 15px;
 }
 
 .menu__close__btn {
   width: 19px;
   height: 19px;
-  position: absolute;
-  top: -38px;
-  right: 15px;
+
   &:hover,
   &:focus {
     fill: $accent-hover-color;

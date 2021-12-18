@@ -219,7 +219,24 @@
         </h2>
         <ul class="team__list">
             <li class="team__item">
-                <img src="./images/igor.jpg" alt="Игорь Демьяненко" width="270"/>
+                <picture>
+                    <source 
+                    srcset="./images/igor.jpg 1x,
+                  ./images/igor-2x.jpg 2x " 
+                    media="(min-width:1200px)"
+                />
+                     <source 
+                    srcset="./images/igor-tab.jpg 1x,
+                    ./images/igor-tab-2x.jpg 2x " 
+                    media="(min-width:768px)" />
+                    <source 
+                    srcset="./images/igor-mob.jpg 1x,
+                    ./images/igor-mob-2x.jpg 2x "
+                     media="(min-width:320px)" />
+                <img 
+                src="./images/igor.jpg" 
+                alt="Игорь Демьяненко" />
+                </picture>
                 <div class="team__wrap">
                 <h3 class="team__member">
                     Игорь Демьяненко
@@ -260,7 +277,15 @@
                 </div>
             </li>
             <li class="team__item">
-                <img src="./images/olga.jpg" alt="Ольга Репина" width="270"/>
+                <picture>
+                    <source srcset="./images/olga.jpg 1x,
+                                  ./images/olga-2x.jpg 2x " media="(min-width:1200px)" />
+                    <source srcset="./images/olga-tab.jpg 1x,
+                                    ./images/olga-tab-2x.jpg 2x " media="(min-width:768px)" />
+                    <source srcset="./images/olga-mob.jpg 1x,
+                                    ./images/olga-mob-2x.jpg 2x " media="(min-width:320px)" />
+                    <img src="./images/olga.jpg" alt="Ольга Репина" />
+                </picture>
                 <div class="team__wrap">
                 <h3 class="team__member">
                     Ольга Репина
@@ -301,7 +326,15 @@
                 </div>
             </li>
             <li class="team__item">
-                <img src="./images/nikolai.jpg" alt="Николай Тарасов" width="270"/>
+                <picture>
+                    <source srcset="./images/nikolai.jpg 1x,
+                                    ./images/nikolai-2x.jpg 2x " media="(min-width:1200px)" />
+                    <source srcset="./images/nikolai-tab.jpg 1x,
+                                    ./images/nikolai-tab-2x.jpg 2x " media="(min-width:768px)" />
+                    <source srcset="./images/nikolai-mob.jpg 1x,
+                                    ./images/nikolai-mob-2x.jpg 2x " media="(min-width:320px)" />
+                    <img src="./images/nikolai.jpg" alt="Николай Тарасов" />
+                </picture>
                 <div class="team__wrap">
                 <h3 class="team__member">
                     Николай Тарасов
@@ -342,7 +375,15 @@
                 </div>
             </li>
             <li class="team__item">
-                <img src="./images/mikhail.jpg" alt="Михаил Ермаков" width="270"/>
+                <picture>
+                    <source srcset="./images/mikhail.jpg 1x,
+                                    ./images/mikhail-2x.jpg 2x " media="(min-width:1200px)" />
+                    <source srcset="./images/mikhail-tab.jpg 1x,
+                                    ./images/mikhail-tab-2x.jpg 2x " media="(min-width:768px)" />
+                    <source srcset="./images/mikhail-mob.jpg 1x,
+                                    ./images/mikhail-mob-2x.jpg 2x " media="(min-width:320px)" />
+                    <img src="./images/mikhail.jpg" alt="Михаил Ермаков" />
+                </picture>
                 <div class="team__wrap">
                 <h3 class="team__member">
                     Михаил Ермаков
