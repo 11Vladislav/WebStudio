@@ -1305,8 +1305,6 @@ address {
 }
 
 .modal {
-  min-height: 581px;
-  min-width: 528px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1319,9 +1317,17 @@ address {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 480px) {
   .modal {
-    min-width: 450px;
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200x) {
+  .modal {
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -1447,13 +1453,12 @@ address {
 }
 
 .check-icon {
-  margin-right: 8px;
+  margin-right: 7px;
   width: 15px;
   height: 16px;
   fill: #ffffff;
   border: 2px solid #212121;
   border-radius: 2px;
-  resize: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1461,25 +1466,18 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
 }
 
-.agreement {
-  font-size: 14px;
-  line-height: 1.71;
+.modal__agreement__text {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   color: #757575;
 }
 
-.agreement a {
+.modal__link {
   color: #2196f3;
   text-decoration: underline;
-}
-
-@media screen and (max-width: 768px) {
-  .agreement {
-    font-size: 12px;
-    line-height: 1.16;
-  }
 }
 
 .modal-checkbox:checked + .check-icon {

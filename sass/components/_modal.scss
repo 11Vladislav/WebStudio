@@ -19,8 +19,6 @@
 }
 
 .modal {
-  min-height: 581px;
-  min-width: 528px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -32,8 +30,14 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform $duration $timing-function;
-  @media screen and (max-width: 768px) {
-    min-width: 450px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 609px;
+  }
+
+  @media screen and (min-width: 1200x) {
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -156,13 +160,12 @@
 }
 
 .check-icon {
-  margin-right: 8px;
+  margin-right: 7px;
   width: 15px;
   height: 16px;
   fill: $secondary-color;
   border: 2px solid $dominant-color;
   border-radius: 2px;
-  resize: none;
   transition: background-color $duration $timing-function,
     border-color $duration $timing-function;
 }
@@ -171,22 +174,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
 }
 
-.agreement {
-  font-size: 14px;
-  line-height: 1.71;
+.modal__agreement__text {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   color: $alt-text-color;
-  & a {
-    color: $accent-hover-color;
-    text-decoration: underline;
-  }
-  @media screen and (max-width: 768px) {
-    font-size: 12px;
-    line-height: 1.16;
-  }
 }
+
+.modal__link {
+  color: $accent-hover-color;
+  text-decoration: underline;
+}
+
 .modal-checkbox:checked + .check-icon {
   background-color: $accent-hover-color;
   border-color: transparent;
