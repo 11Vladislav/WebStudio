@@ -117,17 +117,27 @@
         <h1 class="visually-hidden">Наше портфолио
         </h1>
     <ul class="portfolio-buttons__list">
-        <li class="portfolio-buttons__item"><button type="button" class="button">Все</button></li>
-        <li class="portfolio-buttons__item"><button type="button" class="button">Веб сайты</button></li>
-        <li class="portfolio-buttons__item"><button type="button" class="button">Приложения</button></li>
-        <li class="portfolio-buttons__item"><button type="button" class="button">Дизайн</button></li>
-        <li class="portfolio-buttons__item"><button type="button" class="button">Маркетинг</button></li>
+        <li class="portfolio-buttons__item">
+            <button type="button" data-f="all" class="button all" >Все</button>
+        </li>
+        <li class="portfolio-buttons__item">
+            <button type="button" data-f="web-sites" class="button web-sites" >Веб сайты</button>
+        </li>
+        <li class="portfolio-buttons__item">
+            <button type="button" data-f="apps" class="button apps" >Приложения</button>
+        </li>
+        <li class="portfolio-buttons__item">
+            <button type="button" data-f="design" class="button design" >Дизайн</button>
+        </li>
+        <li class="portfolio-buttons__item">
+            <button type="button" data-f="marketing" class="button marketing" >Маркетинг</button>
+        </li>
     </ul>
         </div>
     <!-- Выполненные проекты     -->
     <div class="container">
     <ul class="projects__list">
-        <li class="project__item">
+        <li class="project__item web-sites">
             <a href="#" class="project__link">
             <div class="project__image">
                 <picture>
@@ -148,11 +158,11 @@
             </div>
             <div class="portfolio__heading">
             <h2 class="portfolio__title">Технокряк</h2>
-            <p class="portfolio__description">Веб сайты</p>
+            <p class="portfolio__description">Веб сайт</p>
             </div>
             </a>
         </li>
-        <li class="project__item">
+        <li class="project__item design">
             <a href="#" class="project__link">
             <div class="project__image">
             <picture>
@@ -176,7 +186,7 @@
             </div>
             </a> 
         </li>
-        <li class="project__item">
+        <li class="project__item apps">
             <a href="#" class="project__link">
             <div class="project__image">
             <picture>
@@ -200,7 +210,7 @@
             </div>
             </a>
         </li>
-        <li class="project__item">
+        <li class="project__item marketing">
             <a href="#" class="project__link">
             <div class="project__image">
             <picture>
@@ -224,7 +234,7 @@
             </div>
            </a>
         </li>    
-        <li class="project__item">
+        <li class="project__item apps">
             <a href="#" class="project__link">
             <div class="project__image">
             <picture>
@@ -248,7 +258,7 @@
             </div>
             </a>
         </li>
-        <li class="project__item">
+        <li class="project__item web-sites">
             <a href="#" class="project__link">
             <div class="project__image">
             <picture>
@@ -272,7 +282,7 @@
             </div>
             </a>
         </li>
-        <li class="project__item">
+        <li class="project__item design">
             <a href="#" class="project__link">
             <div class="project__image">
             <picture>
@@ -296,7 +306,7 @@
             </div>
             </a>
         </li>
-        <li class="project__item">
+        <li class="project__item marketing">
             <a href="#" class="project__link">
             <div class="project__image">
             <picture>
@@ -320,7 +330,7 @@
             </div>
             </a>
         </li>
-        <li class="project__item">
+        <li class="project__item apps">
             <a href="#" class="project__link">
             <div class="project__image">
                 <picture>
@@ -429,5 +439,6 @@
      </div>
 </footer>
 <script src="./js/mob-menu.js"></script>
+<script src="./js/portfolio-filter.js"></script>
 </body>
 </html>

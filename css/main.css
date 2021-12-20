@@ -1546,6 +1546,10 @@ address {
   text-align: left;
 }
 
+.hide {
+  display: none;
+}
+
 .mobile-menu {
   position: fixed;
   top: 0;
