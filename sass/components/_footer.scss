@@ -21,14 +21,14 @@
 }
 
 .footer__logo {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  @media screen and (max-width: 768px) {
-    display: flex;
-    justify-content: center;
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
   }
 }
 
@@ -44,8 +44,9 @@
 
 .footer__location {
   margin-top: 20px;
-  @media screen and (max-width: 768px) {
-    text-align: center;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
   }
 }
 
@@ -54,6 +55,8 @@
 }
 
 .footer__link {
+  display: flex;
+  justify-content: center;
   color: $third-text-color;
   font-size: 14px;
   line-height: 1.71;
@@ -63,9 +66,8 @@
     color: $accent-hover-color;
     transition: color $duration $timing-function;
   }
-  @media screen and (max-width: 768px) {
-    display: flex;
-    justify-content: center;
+  @media screen and (min-width: 1200px) {
+    display: block;
   }
 }
 
