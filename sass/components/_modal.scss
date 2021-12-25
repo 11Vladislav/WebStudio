@@ -31,7 +31,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform $duration $timing-function;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 1199px) {
     width: 450px;
     height: 609px;
   }
