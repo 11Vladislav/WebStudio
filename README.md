@@ -1,2 +1,2 @@
-# goit-markup-hw-08
+# WebStudio
 Adaptive and mobile styles
