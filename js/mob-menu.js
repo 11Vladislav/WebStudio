@@ -1,11 +1,12 @@
 (() => {
   const refs = {
-    openMenuBtn: document.querySelector('.menu__open__btn'),
-    closeMenuBtn: document.querySelector('.menu__close__btn'),
-    menu: document.querySelector('.mobile-menu'),
+    closeMenuBtn: document.querySelector('[data-mobile-menu-close]'),
+    menu: document.querySelector('[data-mobile-menu]'),
   };
 
-  refs.openMenuBtn.addEventListener('click', toggleMenu);
+  const openMenuBtns = document.querySelectorAll("[data-mobile-menu-open]");
+    openMenuBtns.forEach(openMenuBtn =>
+        openMenuBtn.addEventListener("click", toggleMenu));
   refs.closeMenuBtn.addEventListener('click', toggleMenu);
 
   function toggleMenu() {

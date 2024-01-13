@@ -1471,6 +1471,22 @@ address {
 .contacts-container {
   width: 100%;
   height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.shedule {
+  margin-left: 50px;
+}
+
+.shedule__title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.shifts {
+  margin-top: 20px;
+  font-size: 20px;
 }
 
 .mobile-menu {
@@ -1599,6 +1615,7 @@ address {
 
 .mobile-social__list {
   display: flex;
+  justify-content: center;
 }
 
 .mobile-social__item:not(:last-child) {

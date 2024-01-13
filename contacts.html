@@ -58,15 +58,15 @@
                 </li>
             </ul>
             <button type="button" class="menu__open">
-                <svg class="menu__open__btn">
+                <svg class="menu__open__btn" data-mobile-menu-open>
                     <use href="./images/icons.svg#icon-mob-menu-btn" width="24" height="16"></use>
                 </svg>
             </button>
         </div>
-        <div class="mobile-menu is-hidden">
+        <div class="mobile-menu is-hidden" data-mobile-menu>
             <div class="container">
                 <button type="button" class="menu__close">
-                    <svg class="menu__close__btn">
+                    <svg class="menu__close__btn" data-mobile-menu-close>
                         <use href="./images/icons.svg#icon-close_mob_menu" width="19" height="19"></use>
                     </svg>
                 </button>
@@ -112,7 +112,23 @@
     <section class="contacts">
         <div class="container">
             <div class="contacts-container">
-
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.779267829504!2d30.53581087625419!3d50.42658408908233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0e033ecbe9%3A0x57a4dffefec77da0!2z0LHRg9C70YzQstCw0YAg0JvQtdGB0ZYg0KPQutGA0LDRl9C90LrQuCwgMjYsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1705140825625!5m2!1suk!2sua" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div class="shedule">
+                    <h3 class="shedule__title">
+                        График работы:
+                    </h3>
+                    <br class="shifts">
+                        ПН - ПТ: 09:00 - 18:00;</br>
+                        СБ, ВС: выходные;
+                    </p>
+                </div>
             </div>
         </div>
     </section>
